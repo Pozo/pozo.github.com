@@ -1,55 +1,216 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap</title>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Zoltan Polgar</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	  
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <script crossorigin="anonymous"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="assets/styles/stylesheet.css" rel="stylesheet" type="text/css"/>
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+<header role="banner">
+    <!-- http://jsfiddle.net/aq9Laaew/144985/ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid flex-column flex-lg-row justify-content-lg-between">
+
+            <div class="d-flex flex-column text-center order-lg-2">
+                <a class="navbar-brand" href="#">
+                    <picture>
+                        <source srcset="assets/images/zoltan.polgar.logo.short.webp" type="image/webp">
+                        <source srcset="assets/images/zoltan.polgar.logo.short.jpeg" type="image/jpeg">
+                        <img src="assets/images/zoltan.polgar.logo.short.jpeg">
+                    </picture>
+                </a>
+                <h4 class="tagline navbar-text">Senior Software Developer</h4>
+            </div>
+
+            <button class="navbar-toggler" data-target=".dual-nav" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse dual-nav w-50 order-lg-3">
+                <ul class="nav navbar-nav ml-auto">
+                    <a class="nav-link" href="https://github.com/Pozo" target="_blank">GITHUB</a>
+                    <a class="nav-link" href="https://dev.to/pozo" target="_blank">BLOG</a>
+                </ul>
+            </div>
+
+            <div class="navbar-collapse collapse dual-nav w-50 order-lg-1">
+            </div>
+
         </div>
-      </li>
+    </nav>
+</header>
+<main class="container" role="main">
+    <div class="card" style="border: none;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <picture>
+                    <source srcset="assets/images/zoltan.polgar.webp" type="image/webp">
+                    <source srcset="assets/images/zoltan.polgar.jpeg" type="image/jpeg">
+                    <img alt="Zoltan Polgar" class="card-img" src="assets/images/zoltan.polgar.jpeg">
+                </picture>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <p class="text-justify" style="font-size: large;">I'm Zoltan Polgar, a versatile software developer
+                        with 9 years of
+                        experience.
+                        My current position is freelances Senior Java Developer. In my ongoing project I'm working
+                        with Spring Boot, Docker and Kubernetes on a daily basis.
+                        <br/>
+                        <br/>
+                        Beforehand I was working for ChemAxon and I developed Marvin which is a chemical editor
+                        for drawing chemical structures, queries and reactions. Previously, I was working for EPAM
+                        Systems where I was involved in several Java and web technology related projects.
+                        <br/>
+                        <br/>
+                        Apart from Java I've worked with many programming languages such as Scala, Kotlin, Python, PHP,
+                        Perl, JavaScript. I also have notable experience with Android related technologies and I have a
+                        keen interest in Linux and it's ecosystem, so during my free time I always have some idea for a
+                        pet project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <ul class="list-unstyled">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Freelancer</li>
+                <li aria-current="page" class="breadcrumb-item active">07 / 2019 - present</li>
+            </ol>
+        </nav>
+        <li class="media">
+            <ul>
+                <li>Developing and design RESTful services using Spring Boot</li>
+                <li>Creating reproducible builds of the Kubernetes applications, managed Kubernetes manifest files
+                </li>
+                <li>Creating and maintaining Gitlab pipelines</li>
+                <li>Creating CD process to include support building of Docker Images and publish into a private
+                    repository
+                </li>
+                <li>Creating Containers in Docker</li>
+                <li>Designing solution architectures and suggested internal process improvements</li>
+                <li>Working on Cassandra Data modelling, NoSQL Architecture</li>
+            </ul>
+        </li>
+        <br/>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Supercharge</li>
+                <li aria-current="page" class="breadcrumb-item active">09 / 2017 - 07 / 2019</li>
+            </ol>
+        </nav>
+        <li class="media">
+            <ul>
+                <li>Developed and design RESTful services using Spring Boot</li>
+                <li>Managed Kubernetes charts using Helm</li>
+                <li>Created reproducible builds of the Kubernetes applications, managed Kubernetes manifest files and
+                    Managed releases of Helm packages
+                </li>
+                <li>Created and maintained Jenkins pipelines and shared libraries</li>
+                <li>Created CD process to include support building of Docker Images and publish into a private
+                    repository
+                </li>
+                <li>Created Containers in Docker</li>
+                <li>Designed solution architectures and suggested internal process improvements</li>
+                <li>Wrote automated performance tests using JMeter</li>
+                <li>Worked on Cassandra Data modelling, NoSQL Architecture</li>
+                <li>Maintained Scala codebase</li>
+                <li>Designed and developed a chatbot application using the Messenger Platform</li>
+                <li>Involved in migrating data from MySQL to PostgreSQL</li>
+            </ul>
+        </li>
+        <br/>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">ChemAxon</li>
+                <li aria-current="page" class="breadcrumb-item active">02 / 2016 - 09 / 2017</li>
+            </ol>
+        </nav>
+        <li class="media">
+            <ul>
+                <li>Developed client slide components utilizing Java Swing framework</li>
+                <li>Developed screen flows and new window layouts</li>
+                <li>Participated in process designing and strategic communication development</li>
+                <li>Supported clients in forum and calls</li>
+                <li>Developed Slack integration</li>
+                <li>Improved CI/CD Jenkins pipeline companywide</li>
+                <li>Planned and executed several refactoring on a legacy codebase</li>
+                <li>Wrote automated test using BDD framework Cucumber and Gherkin</li>
+                <li>Researched new possible ways to test the application</li>
+            </ul>
+        </li>
+        <br/>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">EPAM Systems</li>
+                <li aria-current="page" class="breadcrumb-item active">10 / 2013 - 02 / 2016</li>
+            </ol>
+        </nav>
+        <li class="media">
+            <ul>
+                <li>Developed new applications and added functionality to existing applications using Apache Camel,
+                    Apache ActiveMQ and Spring Boot technologies
+                </li>
+                <li>Used Jira to document defects and report problems</li>
+                <li>Developed UIs with PhoneGap, Angular, JavaScript, HTML and CSS</li>
+                <li>Developed Java modules with Agile and other standard methodologies</li>
+                <li>Developed UI components with Eclipse RCP</li>
+                <li>Create and execute test cases in JUnit for unit testing of application</li>
+                <li>Supported new colleagues onsite</li>
+            </ul>
+        </li>
+        <br/>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">GRAPHISOFT</li>
+                <li aria-current="page" class="breadcrumb-item active">08 / 2011 - 09 / 2013</li>
+            </ol>
+        </nav>
+        <li class="media">
+            <ul>
+                <li>Utilized object-oriented programming and Java for creating business logic</li>
+                <li>Developed desktop application written in SWT and JFace</li>
+                <li>Implemented multi threading and exception handling to improve application functionality</li>
+                <li>Developed UIs with GWT, JavaScript, HTML and CSS</li>
+                <li>Developed testing framework written is Perl</li>
+            </ul>
+        </li>
+        <br/>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Praeventio Biztosítási Alkusz Kft.</li>
+                <li aria-current="page" class="breadcrumb-item active">05 / 2010 - 01 / 2011</li>
+            </ol>
+        </nav>
+        <li class="media">
+            <ul>
+                <li>Developed insurance premium calculation engines in PHP</li>
+                <li>Utilised programming capabilities in PHP, SQL and Javascript and other libraries as needed</li>
+                <li>Developed UIs with JavaScript, HTML and CSS</li>
+                <li>Create and execute test cases in SoapUI</li>
+            </ul>
+        </li>
+        <br/>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-<main role="main" class="container">
-
-  <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
-
 </main>
 </body>
 </html>

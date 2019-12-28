@@ -1,0 +1,12 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2.tagline {
+    font-size: .8rem;
+    margin: 0px;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 1199.98px) {
+.nav-link {text-align:center}
